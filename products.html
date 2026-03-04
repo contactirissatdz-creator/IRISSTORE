@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <script>
-        (function() { emailjs.init("TLBPEc_nZnhle1YT6"); })();
+        (function() { emailjs.init("Crbdg5U7NBVU_vQoT"); })();
     </script>
     
     <style>
@@ -573,14 +573,14 @@ IRIS  ثقة . جودة .امان في التوصيل ®
 
             Swal.fire({ title: 'جاري المعالجة', text: 'يرجى الانتظار...', allowOutsideClick: false, didOpen: () => { Swal.showLoading(); } });
 
-            emailjs.sendForm('service_an0x0sw', 'template_5tj78y7', this)
+            emailjs.sendForm('service_8lweapb', 'template_ypmxdh9', this)
                 .then(() => {
                     Swal.fire('تم بنجاح!', 'تم استلام طلبك، تفقد بريدك.', 'success');
                     this.reset();
                     closeModal();
                 })
                 .catch(err => {
-                    Swal.fire('خطأ!', 'فشل الإرسال، يرجى اعادةالمحاولة لاحقا.', 'error');
+                    Swal.fire('خطأ!', 'فشل الإرسال، تحقق من الإعدادات.', 'error');
                 })
                 .finally(() => {
                     btn.disabled = false;
