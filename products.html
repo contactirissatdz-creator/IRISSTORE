@@ -759,3 +759,53 @@ function copyIrisEmail() {
 
 </body>
 </html>
+<div id="verifyShield" onclick="showCert()" style="position: fixed; bottom: 30px; right: 30px; cursor: pointer; z-index: 10001; transition: 0.5s;">
+    <div style="background: #1a1a1a; color: #fff; padding: 12px 22px; border-radius: 12px; display: flex; align-items: center; gap: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.4); border: 1px solid #A78F20; border-right: 6px solid #A78F20;">
+        <svg width="26" height="26" fill="#A78F20" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        <div style="display: flex; flex-direction: column; line-height: 1.2;">
+            <span style="font-family: 'Tajawal', sans-serif; font-weight: 800; font-size: 0.95rem; color: #A78F20;">مركز التوثيق الرقمي</span>
+            <small style="font-size: 0.7rem; color: #00ff00; font-family: monospace; letter-spacing: 1px;">OFFICIAL AGENT VERIFIED</small>
+        </div>
+    </div>
+</div>
+
+<script>
+function showCert() {
+    Swal.fire({
+        title: '<div style="font-family: \'Tajawal\', sans-serif; font-weight: 900; color: #1a1a1a;">بطاقة الاعتماد التجاري المعتمد</div>',
+        html: `
+            <div style="text-align: right; font-family: 'Tajawal', sans-serif; line-height: 1.8; color: #444;">
+                
+                <div style="background: #fdfbf0; border: 1px solid #f1e3a1; padding: 15px; border-radius: 10px; margin-bottom: 20px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <span style="background: #2e7d32; color: #fff; padding: 2px 10px; border-radius: 20px; font-size: 0.7rem;">حالة النشاط: متصل ونشط</span>
+                        <b style="color: #A78F20; font-size: 0.8rem;">رقم التوثيق: IRIS-DZ-26</b>
+                    </div>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">✅ <b>الجهة المعتمدة:</b> وكيل توزيع حصري لمنتجات IRIS.</p>
+                    <p style="margin: 5px 0; font-size: 0.9rem;">✅ <b>نظام المعاملات:</b> محمي بموجب بروتوكول التجارة الرقمية الآمنة.</p>
+                </div>
+
+                <div style="border-right: 4px solid #A78F20; background: #fafafa; padding: 15px; margin-bottom: 15px; font-size: 0.9rem;">
+                    <b style="color: #1a1a1a;">بيان الموثوقية:</b><br>
+                    تتم كافة العمليات المالية عبر قنوات مصرفية رسمية (بريد الجزائر) لضمان الشفافية المطلقة. وصل الإيداع الخاص بك هو <b>المستند القانوني الأول</b> الذي يضمن حقك في الاستلام والضمان.
+                </div>
+
+                <p style="font-size: 0.75rem; color: #888; text-align: center; font-style: italic;">
+                    هذا الموقع يطبق معايير الجودة الرقمية لشركة إيريس العالمية لضمان تجربة تسوق آمنة.
+                </p>
+
+                <div style="text-align:center; margin-top:20px; position: relative;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://iris-algerie.com/verified" style="width:85px; filter: contrast(1.2); border: 1px solid #eee; padding: 5px;">
+                    <div style="font-size: 0.6rem; color: #bbb; margin-top: 5px;">كود المصادقة الثنائية - مصلحة الزبائن</div>
+                </div>
+            </div>
+        `,
+        confirmButtonText: 'تصفح بضمان الوكالة',
+        confirmButtonColor: '#A78F20',
+        background: '#ffffff',
+        customClass: {
+            popup: 'rounded-popup'
+        }
+    });
+}
+</script>
