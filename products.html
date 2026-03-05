@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <script>
-        (function() { emailjs.init("-54DH-VzR_sHPJUDb"); })();
+        (function() { emailjs.init("llKM3wfoKLpfSNhxs"); })();
     </script>
     
     <style>
@@ -431,8 +431,7 @@ IRIS  ثقة . جودة .امان في التوصيل ®
     <label>بروتوكول الاستلام وبوابة الدفع</label>
     <select name="shipping_method" required>
         <option value="" disabled selected>اختر آلية التسوية اللوجستية...</option>
-        <option value="Priority-Delivery-CCP">توصيل الأولوية للموقع المحدد - تسوية عبر الحساب البريدي الجاري (CCP)</option>
-        <option value="Fast-Track-BaridiMob">شحن سريع للموقع المحدد - دفع رقمي عبر منصة (بريدي موب)</option>
+        <option value="Fast-Track-BaridiMob">شحن سريع للموقع المحدد - دفع رقمي مسبق عبر منصة (بريدي موب)</option>
         <option value="Pickup-Setif-Hub">استلام مباشر من مركز التوزيع المعتمد (وحدة سطيف اللوجستية)</option>
         <option value="Pickup-Algiers-Hub">استلام مباشر من صالة عرض النخبة (فرع الجزائر العاصمة)</option>
     </select>
@@ -573,7 +572,7 @@ IRIS  ثقة . جودة .امان في التوصيل ®
 
             Swal.fire({ title: 'جاري المعالجة', text: 'يرجى الانتظار...', allowOutsideClick: false, didOpen: () => { Swal.showLoading(); } });
 
-            emailjs.sendForm('service_effwn34', 'template_r2ajm0g', this)
+            emailjs.sendForm('service_jpjnc9j', 'template_p7tt058', this)
                 .then(() => {
                     Swal.fire('تم بنجاح!', 'تم استلام طلبك، تفقد بريدك.', 'success');
                     this.reset();
